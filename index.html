@@ -379,7 +379,50 @@
             <use href="./images/symbol-defs.svg#icon-Vector">
             </use>
           </svg>
+          <!-- ========= 6 homework ==================== -->
         </button>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+        <form class="modal-form">
+            <label>
+                <span class="modal-label-text">Name</span> 
+            <input 
+                type="text" 
+                class="modal-input" 
+                placeholder="John" 
+                name="user-name"
+                required
+                minlength="2">
+            </label>
+            <label>
+                <span class="modal-label-text">Phone</span> 
+            <input 
+                type="tel" 
+                class="modal-input" 
+                placeholder="+380 (00) 000-00-00" 
+                name="user-phone" 
+                title="+380 (00) 000-00-00"
+                required
+                id="Phone*"
+                pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}">
+            </label>
+            <label>
+                <span class="modal-label-text">Email</span> 
+            <input 
+                type="email" 
+                class="modal-input" 
+                placeholder="Enter your email" 
+                name="user-mail">
+            </label>
+            <label>
+                <span class="modal-label-text">Comment</span> 
+            <input 
+                type="text" 
+                class="modal-input" 
+                placeholder="Enter your comment" 
+                name="user-comment">
+            </label>
+            <button type="submit">send</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>

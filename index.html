@@ -383,43 +383,63 @@
         </button>
         <p class="modal-title">Leave your contacts and we will call you back</p>
         <form class="modal-form">
-            <label>
+            
+                <label class="modal-field">
                 <span class="modal-label-text">Name</span> 
-            <input 
+            <div class="input-wrap">  
+                <input 
                 type="text" 
                 class="modal-input" 
                 placeholder="John" 
                 name="user-name"
                 required
                 minlength="2">
+                <svg class="modal-input-icon" widht="18" height="18">
+                    <use href="./images/symbol-defs.svg#icon-person-black-18dp-1"></use>
+                </svg>
+            </div> 
             </label>
-            <label>
-                <span class="modal-label-text">Phone</span> 
-            <input 
-                type="tel" 
-                class="modal-input" 
-                placeholder="+380 (00) 000-00-00" 
-                name="user-phone" 
-                title="+380 (00) 000-00-00"
-                required
-                id="Phone*"
-                pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}">
-            </label>
-            <label>
+         
+            <div class="modal-field">
+                <label for="user-phone" class="modal-label-text">Phone</label>
+                <div class="input-wrap">
+                    <input 
+                        type="tel" 
+                        class="modal-input" 
+                        placeholder="+380 (00) 000-00-00" 
+                        name="user-phone" 
+                        title="+380 (00) 000-00-00"
+                        required
+                        id="user-phone"/>
+                        <svg class="modal-input-icon" widht="18" height="24">
+                            <use href="./images/symbol-defs.svg#icon-phone-black-18dp-1"></use>
+                        </svg>
+                </div>
+            </div>
+
+            <label class="modal-field">
                 <span class="modal-label-text">Email</span> 
-            <input 
+            <div class="input-wrap">
+                <input 
                 type="email" 
                 class="modal-input" 
                 placeholder="Enter your email" 
                 name="user-mail">
+                <svg class="modal-input-icon" widht="18" height="24">
+                  <use href="./images/symbol-defs.svg#icon-email-black-18dp-1"></use>
+              </svg>
+            </div>
             </label>
-            <label>
+
+            <label class="modal-field">
                 <span class="modal-label-text">Comment</span> 
-            <input 
-                type="text" 
-                class="modal-input" 
-                placeholder="Enter your comment" 
-                name="user-comment">
+                <div class="input-wrap">
+                <textarea 
+                class="modal-textarea"
+                name="" 
+                id="" 
+                placeholder="Text input"></textarea>
+                </div>
             </label>
             <button type="submit">send</button>
         </form>

@@ -734,6 +734,32 @@ margin-bottom: 120px;
     opacity: 1;
 }
 
+/* =====================footer subcribe ============================== */
+.footer-soc-subcribe {
+    margin-left: 80px;
+}
+.subscribe-btn {
+    width: 165px;
+    height: 40px;
+
+    padding: 8px 24px;
+    gap: 16px;
+
+    
+    left: 77.5%;
+    right: 11.04%;
+    top: 45.16%;
+    bottom: 41.94%;
+
+
+
+    background: #4D5AE5;
+    border-radius: 4px;
+}
+.subscribe-input-wrap {
+    display: flex;
+}
+
 /* =====================MODAL WINDOW ============================== */
 
 .backdrop {

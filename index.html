@@ -417,7 +417,21 @@
                 </div>
             </div>
 
-            <label class="modal-field">
+            <div class="modal-field">
+              <label for="user-mail" class="modal-label-text">Email</label>
+              <div class="input-wrap">
+                  <input 
+                      type="email" 
+                      class="modal-input" 
+                      placeholder="Enter your email" 
+                      name="user-mail" 
+                      id="user-mail"/>
+                      <svg class="modal-input-icon" widht="18" height="24">
+                          <use href="./images/symbol-defs.svg#icon-email-black-18dp-1"></use>
+                      </svg>
+              </div>
+          </div>
+            <!-- <label class="modal-field">
                 <span class="modal-label-text">Email</span> 
             <div class="input-wrap">
                 <input 
@@ -429,7 +443,7 @@
                   <use href="./images/symbol-defs.svg#icon-email-black-18dp-1"></use>
               </svg>
             </div>
-            </label>
+            </label> -->
 
             <label class="modal-field">
                 <span class="modal-label-text">Comment</span> 
@@ -441,7 +455,20 @@
                 placeholder="Text input"></textarea>
                 </div>
             </label>
-            <button type="submit">send</button>
+
+                <div class="modal-field">
+                  <input type="checkbox" 
+                  id="privacy" 
+                  value="true"
+                  class="modal-check visually-hidden"
+                  name="user-privacy" 
+                  >
+                  <label for="privacy" class="check-text">I accept the terms and conditions of the <a href="http://">Privacy Policy</a></label>
+                </div>
+                <div class="submit-btn-title">
+                  <button type="submit" class="submit-btn">Send</button>
+                </div>
+            
         </form>
       </div>
     </div>

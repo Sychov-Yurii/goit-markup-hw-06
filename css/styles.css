@@ -61,6 +61,20 @@ img {
     list-style: none;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
 
 .container {
     width: 1158px;
@@ -793,7 +807,7 @@ margin-bottom: 120px;
 
 .modal-field {
     margin-bottom: 8px;
-    padding-top: px;
+    padding-top: 8px;
 }
 
 .input-wrap {
@@ -816,7 +830,7 @@ margin-bottom: 120px;
 
 .modal-input-icon {
     position: absolute;
-    left: -130px;
+    left: -134px;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -878,4 +892,54 @@ margin-bottom: 120px;
 
 .modal-close-btn-icon {
     
+}
+
+.modal-check {
+    width: 16px;
+    height: 16px;
+}
+
+.check-text {
+    display: flex;
+    gap: 8px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.04em;
+    color: #757575;
+}
+
+.check-text::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    border: 1.25px solid #2E2F42;
+    border-radius: 2px;
+    display: block;
+}
+.modal-check:checked + .check-text::before{
+    background-color:var(--OCEAN);
+    border: none;
+    background-image: url(../images/Vector.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.submit-btn-title {
+    text-align: center;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.submit-btn{
+    color: var(--WHITE);
+    background: #4D5AE5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 16px 32px;
+    gap: 10px;
+    width: 169px;
+    height: 56px;
+    left: 635px;
+    top: 584px;
 }

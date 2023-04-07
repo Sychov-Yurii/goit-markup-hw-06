@@ -789,7 +789,8 @@ margin-bottom: 120px;
 }
 
 .subscribe-input-icon {
-
+    width: 24px;
+    height: 24px;
 }
 
 .subscribe-input-wrap {

@@ -867,6 +867,7 @@ margin-bottom: 120px;
     letter-spacing: 0.02em;
     color: #2E2F42;
     text-align: center;
+    padding-bottom: 16px;
 }
 
 .modal-field {
@@ -917,7 +918,7 @@ margin-bottom: 120px;
 }
 .modal-input:not(:focus):not(:placeholder-shown):invalid
 {
-    background-color: #d0593173;
+    background-color: ;
 }
 
 .modal-form {
@@ -931,6 +932,7 @@ margin-bottom: 120px;
     line-height: 14px;
     letter-spacing: 0.04em;
     color: #8E8F99;
+    padding-top: 8px;
 }
 
 .modal-textarea {

@@ -641,17 +641,30 @@ margin-bottom: 120px;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.customers-list:hover, 
-.customers-list:focus {
+
+.customers-list:hover 
+{
+    border-color:var(--OCEAN);  
+    opacity: 1;
+} 
+.customers-list:focus 
+{
     border-color:var(--OCEAN);  
     opacity: 1;
 } 
 
-.customers-icon:hover,
-.customers-icon:focus {
-    fill: var(--OCEAN);
+
+.customers-list:hover .customers-icon
+{
     opacity: 1;
+    fill: var(--OCEAN);
 } 
+.customers-list:focus .customers-icon
+{
+    opacity: 1;
+    fill: var(--OCEAN);
+} 
+
 
 /*footer*/
 .footer {
